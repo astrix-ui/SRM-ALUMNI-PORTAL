@@ -12,38 +12,55 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="../assets/srmlogo.png" alt="Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="/html/index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Interact</a></li>
-        </ul>
-        <div class="register-btn">
-            <a href="login.html" id="register-btn-text">Register</a>
-        </div>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+      <div class="logo">
+        <img src="../assets/srmlogo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="/html/index.html">Home</a></li>
+        <li><a href="/html/about.html">About Us</a></li>
+        <li><a href="/html/searchPage.html">Directory</a></li>
+        <li><a href="/html/eventpage.html">Events</a></li>
+        <li><a href="/html/chat.html">Interact</a></li>
+      </ul>
+      <div class="register-btn">
+        <a href="login.html" id="register-btn-text">Register</a>
+        
+      </div>
+
+      <div class="register-btn">
+        <a href="profile.html" id="register-btn-text">Profile</a>
+        
+      </div>
+      <div class="register-btn">
+        <a href="editprofile.html" id="register-btn-text">Edit Profile</a>
+        
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <!-- Mobile menu -->
     <div class="mobile-menu" id="mobile-menu">
-        <ul class="mobile-nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Directory</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Interact</a></li>
-        </ul>
-        <div class="mobile-register-btn">
-          <a href="./login.html" id="mobile-register-btn-text">Register</a>
-        </div>
+      <ul class="mobile-nav-links">
+        <li><a href="/html/index.html">Home</a></li>
+        <li><a href="/html/about.html">About Us</a></li>
+        <li><a href="/html/searchPage.html">Directory</a></li>
+        <li><a href="/html/eventpage.html">Events</a></li>
+        <li><a href="/html/chat.html">Interact</a></li>
+      </ul>
+      <div class="mobile-register-btn">
+        <a href="./login.html" id="mobile-register-btn-text">Register</a>
       </div>
+      <div class="mobile-register-btn">
+        <a href="./profile.html" id="mobile-register-btn-text">Profile</a>
+      </div>
+       <div class="mobile-register-btn">
+        <a href="./editprofile.html" id="mobile-register-btn-text">Edit Profile</a>
+      </div>
+    </div>
+
 
     <!-- Profile  HEADER Section -->
     <section class="profile-section">
@@ -55,11 +72,14 @@
                 </div>
                 <h2>@aadyajha</h2>
                 <p>243 connections</p>
-                <div class="social-links">
+                <div class="tag">
+                  STUDENT
+                </div>
+                <!-- <div class="social-links">
                     <p>Socials</p>
                     <a href="#">loremipsum.com</a>
                     <a href="#">loremipsum.com</a>
-                </div>
+                </div> -->
                 <button class="follow-btn">FOLLOW</button>
                 <button class="message-btn">MESSAGE</button>
             </div>
@@ -91,32 +111,59 @@
 
         
         <div class="qualifications">
-            <h2>Qualifications</h2>
-            <ul>
-                <li>Qualification1</li>
-                <li>Qualification2</li>
-                <li>Qualification3</li>
-               
-            </ul>
-        </div>
+  <h2>Qualifications</h2>
+  <ul id="qualification-list">
+    <li>
+      Qualification1 <button class="remove-btn">-</button>
+    </li>
+    <li>
+      Qualification2 <button class="remove-btn">-</button>
+    </li>
+    <li>
+      Qualification3 <button class="remove-btn">-</button>
+    </li>
+     <li id="add-qualification-item">
+    <button id="add-qualification-btn">+</button>
+  </li>
+  </ul>
+</div>
+
 
         <div class="experiences">
-            <h2>Experiences</h2>
-            <ul>
-                <li>experience1</li>
-                <li>experience2</li>
-                <li>experience3</li>
-                
-                <li>experience2</li>
-                <li>experience3</li>
-            </ul>
-        </div>
+  <h2>Experiences</h2>
+  <ul id="experience-list">
+    <li>experience1 <button class="remove-btn">-</button></li>
+    <li>experience2 <button class="remove-btn">-</button></li>
+    <li>experience3 <button class="remove-btn">-</button></li>
+    <li id="add-experience-item">
+      <button id="add-experience-btn">+</button>
+    </li>
+  </ul>
+</div>
+
     </div>
     </section>
     <section class="about-section">
+        <button class="edit-btn">Edit</button>
         <h2>About</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, dignissimos. Ipsum nemo quia obcaecati consequuntur, minima doloremque eveniet temporibus quisquam aspernatur mollitia distinctio facilis repudiandae corporis, placeat similique delectus molestiae corrupti, culpa neque adipisci totam recusandae veritatis excepturi nisi. Possimus eos esse omnis aut asperiores accusantium ducimus illum quam temporibus! Cum nesciunt a officia autem earum, pariatur quidem quia dolor deleniti possimus labore, eos, temporibus nam cupiditate blanditiis eligendi mollitia iure. Excepturi doloribus molestias, unde obcaecati tempora veniam ipsam saepe ducimus aperiam veritatis aliquam voluptate eveniet aliquid consectetur aspernatur natus cumque voluptatem. Esse minus nisi aspernatur fugiat ex fuga voluptatum laudantium nobis, incidunt vel asperiores vero tenetur error praesentium ut. Dolores quibusdam vitae repudiandae ad ab ratione facilis beatae, odit quasi similique nostrum voluptatibus expedita fugit illum inventore, nisi sapiente qui! Voluptatem ipsum, sint aliquid, accusamus nobis deserunt doloremque eius eos possimus, neque ad labore animi. Repellat eum dolorum tempore! Temporibus facere nam laudantium doloribus nulla, fugit non minima est repudiandae vel facilis aliquid iusto in qui inventore eius aperiam adipisci asperiores sequi reiciendis. Unde repellendus eaque facilis excepturi? Rem dicta, optio cum maiores totam dolore animi commodi assumenda expedita dolorem est qui ducimus debitis laborum vero perferendis facilis soluta eligendi magnam exercitationem esse iste beatae fugit? Recusandae amet cumque neque quidem delectus ipsa doloribus facilis omnis, autem aliquid fuga ex, vitae expedita illo optio minima eligendi ad libero. Possimus laudantium earum totam sint quis quae ipsa ad voluptate neque nobis, temporibus fuga, delectus quisquam magnam numquam itaque quidem voluptates voluptatum molestias accusamus ex eveniet dicta minus velit. Blanditiis eius voluptatum ab adipisci accusamus ex. Dolore odio corporis harum unde nesciunt quidem dolorem incidunt, rem doloribus aliquam corrupti nisi dignissimos eveniet et? Harum eum deserunt perferendis dolorum nesciunt. Voluptates aperiam velit architecto facilis, quas, aliquam eius fuga, quae eum perspiciatis ratione soluta quisquam porro inventore sint? Repellendus porro inventore accusamus unde et cumque ab impedit sequi numquam quaerat mollitia non, in eius. Molestiae cum distinctio quis unde veniam vero debitis sed. Explicabo officia quod officiis sequi distinctio maxime doloribus fugiat fuga, eum atque iusto velit itaque, adipisci ipsum harum. Excepturi, quidem impedit tempore possimus reprehenderit quibusdam esse. Obcaecati deleniti quos veritatis! Eligendi possimus doloremque ex et aut voluptatem molestiae tempora rem? Quos, voluptate. Dicta, facere? Officiis consequuntur molestias nobis labore, vel saepe recusandae repellat libero natus minus. Eum odit mollitia enim esse id hic cupiditate facere corrupti odio modi eos, repellat est, aliquid fugiat molestias ullam. Soluta, dolorum ut illum autem ipsa dolore facilis quis amet quam incidunt cum delectus ipsum illo fuga expedita ad error modi maxime ipsam atque. Necessitatibus dolorum magnam minus placeat, fugit beatae dolorem eius, perspiciatis alias itaque, repellendus ipsa modi ipsum corporis! Voluptatum ullam laboriosam facere?</p>
+        <!-- IF NOTHING IS ENTERED IN ABOUT, THEN DISPLAY:BLOCK FOR THE FIRST P TAG, ELSE DISPLAY:NONE  -->
+         <p class="empty-msg"> <b> Looks like you haven't entered anything about yourself. Tap the Edit button to do so. </b></p>
+        <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, dignissimos. Ipsum nemo quia obcaecati consequuntur, minima doloremque eveniet temporibus quisquam aspernatur mollitia distinctio facilis repudiandae corporis, placeat similique delectus molestiae corrupti, culpa neque adipisci totam recusandae veritatis excepturi nisi. Possimus eos esse omnis aut asperiores accusantium ducimus illum quam temporibus! Cum nesciunt a officia autem earum, pariatur quidem quia dolor deleniti possimus labore, eos, temporibus nam cupiditate blanditiis eligendi mollitia iure. Excepturi doloribus molestias, unde obcaecati tempora veniam ipsam saepe ducimus aperiam veritatis aliquam voluptate eveniet aliquid consectetur aspernatur natus cumque voluptatem. Esse minus nisi aspernatur fugiat ex fuga voluptatum laudantium nobis, incidunt vel asperiores vero tenetur error praesentium ut. Dolores quibusdam vitae repudiandae ad ab ratione facilis beatae, odit quasi similique nostrum voluptatibus expedita fugit illum inventore, nisi sapiente qui! Voluptatem ipsum, sint aliquid, accusamus nobis deserunt doloremque eius eos possimus, neque ad labore animi. Repellat eum dolorum tempore! Temporibus facere nam laudantium doloribus nulla, fugit non minima est repudiandae vel facilis aliquid iusto in qui inventore eius aperiam adipisci asperiores sequi reiciendis. Unde repellendus eaque facilis excepturi? Rem dicta, optio cum maiores totam dolore animi commodi assumenda expedita dolorem est qui ducimus debitis laborum vero perferendis facilis soluta eligendi magnam exercitationem esse iste beatae fugit? Recusandae amet cumque neque quidem delectus ipsa doloribus facilis omnis, autem aliquid fuga ex, vitae expedita illo optio minima eligendi ad libero. Possimus laudantium earum totam sint quis quae ipsa ad voluptate neque nobis, temporibus fuga, delectus quisquam magnam numquam itaque quidem voluptates voluptatum molestias accusamus ex eveniet dicta minus velit. Blanditiis eius voluptatum ab adipisci accusamus ex. Dolore odio corporis harum unde nesciunt quidem dolorem incidunt, rem doloribus aliquam corrupti nisi dignissimos eveniet et? Harum eum deserunt perferendis dolorum nesciunt. Voluptates aperiam velit architecto facilis, quas, aliquam eius fuga, quae eum perspiciatis ratione soluta quisquam porro inventore sint? Repellendus porro inventore accusamus unde et cumque ab impedit sequi numquam quaerat mollitia non, in eius. Molestiae cum distinctio quis unde veniam vero debitis sed. Explicabo officia quod officiis sequi distinctio maxime doloribus fugiat fuga, eum atque iusto velit itaque, adipisci ipsum harum. Excepturi, quidem impedit tempore possimus reprehenderit quibusdam esse. Obcaecati deleniti quos veritatis! Eligendi possimus doloremque ex et aut voluptatem molestiae tempora rem? Quos, voluptate. Dicta, facere? Officiis consequuntur molestias nobis labore, vel saepe recusandae repellat libero natus minus. Eum odit mollitia enim esse id hic cupiditate facere corrupti odio modi eos, repellat est, aliquid fugiat molestias ullam. Soluta, dolorum ut illum autem ipsa dolore facilis quis amet quam incidunt cum delectus ipsum illo fuga expedita ad error modi maxime ipsam atque. Necessitatibus dolorum magnam minus placeat, fugit beatae dolorem eius, perspiciatis alias itaque, repellendus ipsa modi ipsum corporis! Voluptatum ullam laboriosam facere?</p>
     </section>
+
+    <!-- Overlay Modal -->
+<div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <!-- <button class="close-btn" id="closeOverlay">&times;</button> -->
+        <textarea id="aboutInput" placeholder="Write something about yourself..."></textarea>
+        <div class="button-container">
+
+          <button id="closeOverlay">Cancel</button>
+          
+          <button id="submitAbout">Submit</button>
+        </div>
+    </div>
+</div>
 
     <section class="events-wrapper">
         <div class="events-header">
@@ -147,9 +194,11 @@
   style="display:none; margin-top:10px; width:100px; height:100px; object-fit:cover; border-radius:8px;"
 />
 
-        
-                <button type="submit">Submit</button>
-                <button type="button" id="cancelFormBtn">Cancel</button>
+        <div class="btn-container">
+
+            <button type="submit">Submit</button>
+            <button type="button" id="cancelFormBtn">Cancel</button>
+        </div>
             </form>
         </div>
 
@@ -186,7 +235,7 @@
     </section>
 
     <!-- SUGGESTIONS SECTION  -->
-    <section class="suggestion-section">
+    <!-- <section class="suggestion-section">
 
    
     
@@ -207,7 +256,7 @@
             <a href="#" class="read-more">Read More.</a>
         </div>
 
-    </section>
+    </section> -->
 
      <!-- FOOTER  -->
 
@@ -275,6 +324,76 @@ fileInput.addEventListener('change', () => {
     imagePreview.src = "";
   }
 });
+
+
+// QUALIFICATION 
+const qualificationList = document.getElementById('qualification-list');
+const addItem = document.getElementById('add-qualification-item'); // last <li> with + btn
+const addBtn = document.getElementById('add-qualification-btn');
+
+addBtn.addEventListener('click', () => {
+  const qualification = prompt("Enter new qualification:");
+  if (qualification && qualification.trim() !== '') {
+    const li = document.createElement('li');
+    li.innerHTML = `${qualification.trim()} <button class="remove-btn">-</button>`;
+    // Insert the new qualification before the add button's li to keep + last
+    qualificationList.insertBefore(li, addItem);
+  }
+});
+
+qualificationList.addEventListener('click', (e) => {
+  if (e.target.classList.contains('remove-btn')) {
+    e.target.parentElement.remove();
+  }
+});
+
+
+// EXPERIENCE 
+const experienceList = document.getElementById('experience-list');
+const addExperienceItem = document.getElementById('add-experience-item');
+const addExperienceBtn = document.getElementById('add-experience-btn');
+
+addExperienceBtn.addEventListener('click', () => {
+  const experience = prompt("Enter new experience:");
+  if (experience && experience.trim() !== '') {
+    const li = document.createElement('li');
+    li.innerHTML = `${experience.trim()} <button class="remove-btn">-</button>`;
+    experienceList.insertBefore(li, addExperienceItem);
+  }
+});
+
+experienceList.addEventListener('click', (e) => {
+  if (e.target.classList.contains('remove-btn')) {
+    e.target.parentElement.remove();
+  }
+});
+
+// OVERLAY 
+
+    const editBtn = document.querySelector('.edit-btn');
+    const overlay = document.getElementById('overlay');
+    const submitBtn = document.getElementById('submitAbout');
+    const closeBtn = document.getElementById('closeOverlay');
+    const aboutText = document.querySelector('.about-text');
+    const emptyMsg = document.querySelector('.empty-msg');
+    const aboutInput = document.getElementById('aboutInput');
+
+    editBtn.addEventListener('click', () => {
+        overlay.style.display = 'flex';
+        aboutInput.value = aboutText.textContent.trim();
+    });
+
+    submitBtn.addEventListener('click', () => {
+        const inputText = aboutInput.value.trim();
+        aboutText.textContent = inputText || "No about info provided.";
+        emptyMsg.style.display = inputText ? 'none' : 'block';
+        overlay.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+
 
 
     </script>

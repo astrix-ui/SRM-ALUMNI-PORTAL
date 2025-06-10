@@ -15,39 +15,49 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+     <nav class="navbar">
       <div class="logo">
-          <img src="../assets/srmlogo.png" alt="Logo">
+        <img src="../assets/srmlogo.png" alt="Logo" />
       </div>
       <ul class="nav-links">
-          <li><a href="/html/index.html">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Directory</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Interact</a></li>
+        <li><a href="/html/index.html">Home</a></li>
+        <li><a href="/html/about.html">About Us</a></li>
+        <li><a href="/html/searchPage.html">Directory</a></li>
+        <li><a href="/html/eventpage.html">Events</a></li>
+        <li><a href="/html/chat.html">Interact</a></li>
       </ul>
       <div class="register-btn">
-          <a href="login.html" id="register-btn-text">Register</a>
+        <a href="login.html" id="register-btn-text">Register</a>
+        
+      </div>
+
+      <div class="register-btn">
+        <a href="profile.html" id="register-btn-text">Profile</a>
+        
       </div>
       <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-  </nav>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
   <!-- Mobile menu -->
   <div class="mobile-menu" id="mobile-menu">
       <ul class="mobile-nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Directory</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Interact</a></li>
+        <li><a href="/html/index.html">Home</a></li>
+        <li><a href="/html/about.html">About Us</a></li>
+        <li><a href="/html/searchPage.html">Directory</a></li>
+        <li><a href="/html/eventpage.html">Events</a></li>
+        <li><a href="/html/chat.html">Interact</a></li>
       </ul>
       <div class="mobile-register-btn">
         <a href="./login.html" id="mobile-register-btn-text">Register</a>
       </div>
+      <div class="mobile-register-btn">
+        <a href="./profile.html" id="mobile-register-btn-text">Profile</a>
+      </div>
     </div>
+
 
 
     <!-- Header Section -->
@@ -56,8 +66,7 @@
         <!-- <a href="#" class="p-btn">Search for Alumni</a> -->
         <h1>Login</h1>
         <p>
-          Become a part of our growing community. Register through the form
-          below.
+          We're glad to see you again. Please log in to your account to continue enjoying our services.
         </p>
       </div>
     </section>
@@ -67,13 +76,9 @@
       <div class="info-container">
         <!-- CARD  -->
         <div class="card">
-          <h2>Basics</h2>
+          <h2>Enter your Details</h2>
           <form action="">
-            <div class="name-input-container">
-              <label for="Name" class="form-label">Name</label>
-              <input type="text" name="firstName" placeholder="First Name" />
-              <input type="text" name="lastName" placeholder="Last Name" />
-            </div>
+           
 
             <label for="email_input" class="form-label">Email Adress</label>
             <input
@@ -92,94 +97,15 @@
               placeholder="Enter your password"
               class="input-w-100"
             />
-
-            <label for="confirm_password_input" class="form-label"
-              >Confirm your password</label
-            >
-            <input
-              type="text"
-              id="confirm_password_input"
-              name="confirm_password"
-              placeholder="Confirm your password"
-              class="input-w-100"
-            />
-          </form>
+        </form>
+        <p class="leading">Don't have an account? <a href="/html/signup.html">Create Account</a></p>
+        <button class="p-btn">Register</button>
         </div>
 
 
-        <div class="card">
-            <h2>Professional Information</h2>
-            <form action="">
-              
-  
-              <label for="current_company" class="form-label">Current Company / Organization</label>
-              <input
-                type="text"
-                name="current_company"
-                id="current_company"
-                placeholder="Enter Details"
-                class="input-w-100"
-              />
-  
-              <label for="designation_input" class="form-label">Designation</label>
-              <input
-                type="text"
-                name="Designation"
-                id="designation_input"
-                placeholder="Enter your Designation"
-                class="input-w-100"
-              />
-  
-              <label for="industry_input" class="form-label"
-                >Industry</label
-              >
-              <input
-                type="text"
-                name="Industry"
-                id="industry_input"
-                placeholder="Enter your Industry"
-                class="input-w-100"
-              />
-            </form>
-          </div>
-
-
-          <div class="card">
-            <h2>Academic Information</h2>
-            <form action="">
-              
-  
-              <label for="batch_input" class="form-label">Batch</label>
-              <input
-                type="text"
-                name="Batch"
-                id="batch_input"
-                placeholder="Enter Batch Details"
-                class="input-w-100"
-              />
-  
-              <label for="branch_input" class="form-label">Branch</label>
-              <input
-                type="text"
-                name="Branch"
-                id="branch_input"
-                placeholder="Enter your Branch"
-                class="input-w-100"
-              />
-  
-              
-              <label for="specialization" class="form-label">Specialization</label>
-              <select name="specialization" id="specialization">
-                <option selected disabled>Select specialization</option>
-                <option value="cs">Computer Science</option>
-                <option value="it">Information Technology</option>
-                <option value="mech">Mechanical Engineering</option>
-                <option value="electrical">Electrical Engineering</option>
-              </select>
-            </form>
-          </div>
+       
         
-          <button class="p-btn">Register</button>
+          
       </div>
     </section>
 

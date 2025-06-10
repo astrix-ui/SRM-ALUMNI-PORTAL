@@ -256,13 +256,14 @@
     font-size: 0.8em;
     color: #2F3147;
   }
-  form input, select{
+   input:not([type="radio"]) , select{
     background-color: #EBECED;
     border: 1px solid #D9D9D9;
+        margin-bottom: 7px;
+
     padding: 10px 15px;
     border-radius: 7px;
     width: 100%;
-    /* margin: 5px ; */
     outline: none;
   }
   select{
@@ -288,18 +289,31 @@
   .card {
     background: #ffffff;
     border-radius: 25px;
-    padding: 50px 40px;
-    width: 35%;
+    padding: 40px 30px;
+    width: 40%;
     box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.2);
     text-align: left;
     position: relative;
     margin: 20px 0;
   }
+
+  .leading{
+    /* text-align: right; */
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.1em;
+  }
+  .leading a{
+    color: #266CCB;
+  }
+  .leading a:hover{
+    text-decoration: underline;
+  }
   
   .card h2 {
     font-size: 2.5rem;
     color: #2F3147;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   #submit-btn{
     background-color: #266CCB;
@@ -309,21 +323,13 @@
     border-radius: 27px;
     padding: 14px 27px;
   }
-  .card button{
-    width: 100%;
-    margin-top: 20px;
-  }
 
-  .leading{
-    text-align: right;
-    margin-top: 5px;
+  .student-radio{
+    padding: 10px 0px;
+    color: #2F3147;
+    font-size: 0.9em;
   }
-  .leading a{
-    color: #266CCB;
-  }
-  .leading a:hover{
-    text-decoration: underline;
-  }
+  
   
   /* Responsive Design for Info Section */
   @media screen and (max-width: 768px) {

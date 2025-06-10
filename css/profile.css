@@ -196,6 +196,7 @@ body {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
 }
 .add-more-btn{
     /* width: 100px; */
@@ -240,30 +241,38 @@ body {
 .event-form input,
 .event-form textarea,
 .event-form button {
-    padding: 15px 20px;
+    padding: 10px 5px;
     resize: none;
     background-color: rgb(252, 252, 252);
     margin-top: 10px;
     outline: none;
+    font-size: 1.1em;
     border: 1px solid #ccc;
     border-radius: 15px;
 }
-
+.btn-container{
+    display: flex;
+    width: 30%;
+    gap: 10px;
+    margin: auto;
+}
 .event-form button {
     margin-top: 15px;
-
+    width: 50%;
+    
     cursor: pointer;
-    border:1px solid #4f93f3;
+    /* border:1px solid #4f93f3; */
     color: black;
     background-color: rgb(231, 231, 231);
     /* border: none; */
     transition: 0.3s ease-in-out;
 }
 .event-form button:hover{
-    background-color: #9bc6f5;
+    background-color:#266CCB;
+    color: white;
 }
-.event-form button#cancelFormBtn {
-    background-color: #eb7782;
+.event-form button#cancelFormBtn:hover {
+    background-color: #f04455;
 }
 
 .custom-file-upload input[type="file"] {
@@ -276,17 +285,22 @@ body {
   .custom-file-upload label {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: rgb(231, 231, 231);
+    color: #2F3147;
     text-align: center;
     font-weight: 500;
-    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border-radius:15px;
+    border: 1px solid #cbcaca  ;
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
   
   .custom-file-upload label:hover {
-    background-color: #0056b3;
+    background-color:#317eeb;
+    color: white;
+    /* border: none; */
   }
   
 
@@ -300,7 +314,7 @@ body {
     /* USE THIS MARGIN WHEN MAKING MEDIA QUERIES */
     /* margin: -200px auto; */
     margin: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -351,7 +365,20 @@ body {
 .profile-card-2 h2{
     color: #2F3147;
     font-weight: 500;
-    margin-bottom: 2vh;
+    margin-bottom: 2px;
+}
+.profile-container .tag{
+    background-color:#999;
+    width: fit-content;
+    padding: 2px 8px;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    user-select: none;
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    margin: 8px auto;
+    border-radius: 5px;
 }
 .social-links{
     margin: 2vh;
@@ -453,6 +480,7 @@ body {
     padding: 5px 10px;
     margin-right: 5px;
     border-radius: 5px;
+
     display: inline-block;
 }
 
@@ -585,12 +613,68 @@ body {
 .qualifications li, .experiences li{
     background-color: #EBECED;
     padding: 8px 15px;
+    word-wrap: break-word;
+    word-break: break-all;
     border-radius: 10px;
+    position: relative;
     color: #727272;
 } 
 .qualifications h2, .experiences h2{
     margin-bottom: 20px;
 }
+/* #add-qualification-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+} */
+
+.remove-btn {
+    margin-left: 10px;
+    background-color: #e75f56;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 3px 8px;
+}
+
+#qualification-list input[type="text"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    width: 200px;
+    margin-right: 8px;
+}
+
+#qualification-list button.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#qualification-list button.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width:1100px) {
     .skill-details{
@@ -623,6 +707,73 @@ body {
     }
 }
 
+/* OVERLAY  */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.overlay-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    height: 60%;
+    /* max-width: 500px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.overlay-content textarea {
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", serif;
+    outline: none;
+    font-size: 1.1em;
+    background-color: rgb(237, 237, 237);
+    border-radius: 7px;
+    padding: 20px;
+    resize: none;
+}
+
+.overlay-content button {
+    align-self: flex-end;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 18px;
+}
+.overlay-content button:hover{
+    background-color: rgb(226, 226, 226);
+}
+.button-container{
+    display: flex;
+    margin-top: 5px ;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    /* color: #666; */
+}
+
 
 /* ABOUT SECTION  */
 .about-section{
@@ -630,6 +781,20 @@ body {
     /* margin-top: 450px; */
     margin-bottom: 100px;
     width: 90%;
+    position: relative;
+}
+.edit-btn{
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #3880eb;
+    padding: 5px 13px;
+    right: 10px;
 }
 .about-section h2{
     font-size: 2em;
@@ -656,7 +821,7 @@ body {
 }
 .events-wrapper h2{
     font-size: 2.5em;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .cards-container{
     display: flex;
@@ -673,17 +838,17 @@ body {
     width: 30%;
     background: white;
     display: inline-block;
+        box-shadow: 100px 54px 96px  0px rgba(0, 0, 0, 0.1);
+
     border-radius: 32px;
     overflow: hidden;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    border: 2px solid #266CCB;
+    /* border: 2px solid #266CCB; */
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+
 
 .card img {
     width: 100%;
