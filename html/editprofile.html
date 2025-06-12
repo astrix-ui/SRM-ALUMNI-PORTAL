@@ -190,8 +190,12 @@
               </label>
             </div>
           </div>
-          <!-- (CHANGED) PASSWORD LOGIC  -->
+          <!-- ADDED </FORM> (CHANGED) -->
+        <button class="p-btn">Save Changes</button></form> 
+
+        <!-- (CHANGED) PASSWORD LOGIC copy paste the whole div, cuz some inline css changes are done -->
 <div class="card" id="change-password-card" style="display: none;">
+  <form style="display: flex; flex-direction: column;">
               <h3>Change your Password</h3>
                <label for="current_password_input" class="form-label"
               >Enter your current password</label
@@ -224,12 +228,13 @@
               placeholder="Confirm your password"
               class="input-w-100"
             />
+            <button class="p-btn" style="margin: auto; text-align: center;">Submit</button>
         </form>
       </div>
       <div class="btn-container">
+        <button class="p-btn" onclick="toggleChangePasswordCard()">Change Password</button>
+      </form>
 
-<button class="p-btn" onclick="toggleChangePasswordCard()">Change Password</button>
-        <button class="p-btn">Save Changes</button>
       </div>
     </div>
 
