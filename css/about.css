@@ -213,10 +213,13 @@ body {
 }
 
 .hero-section p {
+    margin: auto;
     margin-top: 30px;
-    font-size: 0.9rem;
+    width: 80%;
+    font-size: 1.1rem;
     color: #2F3147;
-    font-weight: 500;
+    text-align: justify;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
@@ -259,6 +262,9 @@ body {
     .hero-section h1 {
         font-size: 2rem;
         
+    }
+    .hero-section p{
+        width: 100%;
     }
 
     #problem-section-h1 {
@@ -351,7 +357,7 @@ body {
         width: 50%;
     }
     .cards-container{
-        width: 100%;
+        width: 70%;
         text-align: center;
     }
     .team-wrapper{
